@@ -1,3 +1,5 @@
-.available{
-    color:green;
+.booked-room {
+    background-color: #ffe5e5; /* Light red background */
+    color: #e44e4e;            /* Darker red text */
+    font-weight: bold;
 }

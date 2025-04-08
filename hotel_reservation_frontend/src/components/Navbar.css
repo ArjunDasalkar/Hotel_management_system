@@ -1,7 +1,7 @@
 /* Navbar Container */
 header {
     text-align: center;
-    background: #011127;
+    background: #0b1008;
     padding: 20px 0;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -9,6 +9,7 @@ header {
 
 /* Header Title */
 .site-title {
+    font-family:"Courier New";
     color: #e1b333;
     font-size: 2rem;
     font-weight: bold;

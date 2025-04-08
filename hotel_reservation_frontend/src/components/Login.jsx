@@ -42,7 +42,7 @@ const Login = () => {
 
     return (
         <div>
-            <h1>Admin Login</h1>
+            <h1 class="heading">Admin Login</h1>
             {error && <p style={{ color: 'red' }}>{error}</p>}
             <form onSubmit={handleLogin}>
                 <input

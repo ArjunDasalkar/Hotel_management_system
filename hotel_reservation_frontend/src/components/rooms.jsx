@@ -1,6 +1,7 @@
 // src/components/Rooms.jsx
 import React, { useEffect, useState } from 'react';
 import { fetchRooms, addRoom, deleteRoom } from '../api';
+import './rooms.css';
 
 const Rooms = () => {
     const [rooms, setRooms] = useState([]);
@@ -67,7 +68,9 @@ const Rooms = () => {
                 </thead>
                 <tbody>
                     {rooms.map((room) => (
-                        <tr key={room.id}>
+                        // <tr key={room.id}>
+                            <tr key={room.id} className={room.status.toLowerCase() === 'booked' ? 'booked-room' : ''}>
+
                             <td>{room.room_number}</td>
                             <td>{room.type}</td>
                             <td>{room.price}</td>

@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <header>
-            <h1 className="site-title">Hotel Reservation System</h1>
+            <h1 className="site-title">HOTEL RESERVATION SYSTEM</h1>
             <nav>
                 <div className="nav-links">
                     <Link to="/dashboard">Dashboard</Link>

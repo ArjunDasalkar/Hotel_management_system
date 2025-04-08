@@ -23,6 +23,9 @@ h1 {
     color: #f0f0f0;
     animation: fadeIn 1s ease-in-out;
 }
+.heading{
+    color:#1e1e1e
+}
 
 form {
     display: flex;

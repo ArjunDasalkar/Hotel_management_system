@@ -14,7 +14,10 @@ th{
   color:rgb(6, 248, 248)
 }
 h1{
-  color:rgb(112, 14, 45)
+  color:rgb(180, 138, 12)
+}
+h2{
+  color:darkslateblue
 }
  
 
@@ -22,8 +25,20 @@ th, td {
   padding: 10px;
   border: 1px solid #ddd;
 }
-body{
+/* body{
   background-color:rgb(25, 174, 211)
 
-}
+} */
+
+  body {
+    background-image: url('/bgd4.jpg'); 
+    background-size: cover;                
+    background-repeat: no-repeat;          
+    background-position: center;         
+    height: 100vh;                         
+    margin: 0;                             
+  }
+
+  
+
 
