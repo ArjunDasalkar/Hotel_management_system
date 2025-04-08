@@ -108,7 +108,7 @@ const Rooms = () => {
                     onChange={(e) => setNewRoom({ ...newRoom, status: e.target.value })}
                     required
                 >
-                    <option value="Available">Available</option>
+                    <option value="Available" >Available</option>
                     <option value="Booked">Booked</option>
                     <option value="Out of Service">Out of Service</option>
                 </select>

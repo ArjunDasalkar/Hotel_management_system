@@ -23,7 +23,7 @@ const Reservations = () => {
 
     return (
         <div>
-            <Navbar /> {/* Add Navbar */}
+            {/* <Navbar /> Add Navbar */}
             <h1>Reservations</h1>
             <table>
                 <thead>

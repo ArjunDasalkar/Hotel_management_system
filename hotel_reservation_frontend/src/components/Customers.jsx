@@ -1,6 +1,7 @@
 // src/components/Customers.jsx
 import React, { useEffect, useState } from "react";
 import { fetchCustomers, addCustomer, deleteCustomer } from "../api";
+import './Customers.css';
 
 const Customers = () => {
     const [customers, setCustomers] = useState([]);

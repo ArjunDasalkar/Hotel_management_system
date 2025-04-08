@@ -9,6 +9,7 @@ import Reservations from './components/reservations';
 import Navbar from './components/Navbar'; // Import Navbar
 import BookReservation from './components/BookReservation';
 import PrivateRoute from './components/PrivateRoute';
+import './App.css';
 
 const App = () => {
     return (

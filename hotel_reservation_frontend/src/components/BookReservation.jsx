@@ -1,7 +1,8 @@
-// src/components/BookReservation.jsx
+// src/components/BookReservation.jsx 
 import React, { useState, useEffect } from "react";
 import { fetchCustomers, fetchRooms, addReservation } from "../api";
 import Navbar from "./Navbar"; // Import Navbar
+import './BookReservation.css';
 
 const BookReservation = () => {
     const [customers, setCustomers] = useState([]);
@@ -48,12 +49,13 @@ const BookReservation = () => {
             <Navbar /> {/* Navbar added here */}
             <h1>Book Reservation</h1>
             <form onSubmit={handleReservation}>
+                <label>Select Customer</label>
                 <select
                     value={newReservation.customer_id}
                     onChange={(e) => setNewReservation({ ...newReservation, customer_id: e.target.value })}
                     required
                 >
-                    <option value="">Select Customer</option>
+                    <option value="">-- Choose a Customer --</option>
                     {customers.map(customer => (
                         <option key={customer.id} value={customer.id}>
                             {customer.name} ({customer.email})
@@ -61,32 +63,37 @@ const BookReservation = () => {
                     ))}
                 </select>
 
+                <label>Select Room</label>
                 <select
                     value={newReservation.room_id}
                     onChange={(e) => setNewReservation({ ...newReservation, room_id: e.target.value })}
                     required
                 >
-                    <option value="">Select Room</option>
+                    <option value="">-- Choose a Room --</option>
                     {rooms.map(room => (
                         <option key={room.id} value={room.id}>
-                            Room {room.room_number} - {room.type} (${room.price})
+                            Room {room.room_number} - {room.type} (₹{room.price})
                         </option>
                     ))}
                 </select>
 
+                <label>Check-in Date</label>
                 <input
                     type="date"
                     value={newReservation.check_in}
                     onChange={(e) => setNewReservation({ ...newReservation, check_in: e.target.value })}
                     required
                 />
+                {/* <p>Check-in is the date when you will start your stay at the hotel.</p> */}
 
+                <label>Check-out Date</label>
                 <input
                     type="date"
                     value={newReservation.check_out}
                     onChange={(e) => setNewReservation({ ...newReservation, check_out: e.target.value })}
                     required
                 />
+                {/* <p>Check-out is the date when you will leave the hotel.</p> */}
 
                 <button type="submit">Book Reservation</button>
             </form>
