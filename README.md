@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Hotel_reservation_system
 A sophisticated full-stack Hotel Reservation System leveraging React, Node.js (Express), and MySQL. Seamlessly integrates secure customer authentication, dynamic booking management, and Aadhaar verification for a streamlined reservation experience.
 =======
@@ -107,12 +107,17 @@ _(All `GET` requests support sorting via query parameters: `?sort_by=column_name
 🚀 **MustangD**  
 📌 **GitHub:** [ArjunDasalkar](https://github.com/ArjunDasalkar)  
 
+🚀 **Aditya Raut**  
+📌 **GitHub:** [AdityaRaut67](https://github.com/Adityaraut67) 
+
+🚀 **Aryan Shastri**  
+📌 **GitHub:** [AryanShastri](https://github.com/AryanShastri)  
+
 ---
 
 ## **💡 Future Enhancements**
 ✅ Add **pagination** for large datasets  
 ✅ Implement **filtering** (e.g., filter rooms by price range)  
-✅ Create a **frontend** (Next.js / React)  
 
 ---
 >>>>>>> 0a63666 (Day 2 initial commit)
